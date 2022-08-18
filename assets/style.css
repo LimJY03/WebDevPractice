@@ -1,9 +1,19 @@
+:root {
+    --red: #f44336;
+    --light-red: #fff3f3;
+    --header-image-overlay: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+}
+
 /* Desktop View */
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -33,8 +43,19 @@ p {
 }
 
 .hero-button:hover {
-    border: 1px solid #f44336;
-    background: #f44336;
+    border: 1px solid var(--red);
+    background: var(--red);
+}
+
+.hero-button-2 {
+    color: var(--red);
+    border: 1px solid var(--red);
+    background: transparent;
+}
+
+.hero-button-2:hover {
+    color: white;
+    background: var(--red);
 }
 
 .section-title {
@@ -55,12 +76,17 @@ p {
     width: 15px;
 }
 
+.icons {
+    padding: 0;
+    margin: 0;
+}
+
 /* Index Page */
 .header {
     min-height: 100vh;
     width: 100%;
     position: relative;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/banner.png);
+    background-image: var(--header-image-overlay), url(../images/banner.png);
     background-position: center;
     background-size: cover;
 }
@@ -102,7 +128,7 @@ nav > .navigation > ul > li::after {
     width: 0%;
     margin: auto;
     content: '';
-    background-color: #f44336;
+    background-color: var(--red);
     transition: 0.5s;
 }
 
@@ -143,7 +169,7 @@ nav > .navigation > ul > li:hover::after {
     margin-bottom: 5%;
     border-radius: 10px;
     box-sizing: border-box;
-    background: #fff3f3;
+    background: var(--light-red);
     transition: 0.5s;
 }
 
@@ -234,7 +260,7 @@ nav > .navigation > ul > li:hover::after {
     margin-bottom: 5%;
     border-radius: 10px;
     text-align: left;
-    background: #fff3f3;
+    background: var(--light-red);
     transition: 0.5s;
 }
 
@@ -260,7 +286,7 @@ nav > .navigation > ul > li:hover::after {
 
 .testimonials > .row > .testimonials-column .fa {
     margin-top: 15px;
-    fill: #f44336;
+    fill: var(--red);
 }
 
 /* ***** */
@@ -297,7 +323,7 @@ nav > .navigation > ul > li:hover::after {
 .footer .fa {
     padding: 18px 0;
     margin: 0 13px;
-    fill: #f44336;
+    fill: var(--red);
     cursor: pointer;
 }
 
@@ -307,7 +333,7 @@ nav > .navigation > ul > li:hover::after {
     width: 100%;
     text-align: center;
     color: white;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/background.jpg);
+    background-image: var(--header-image-overlay), url(../images/background.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -338,19 +364,131 @@ nav > .navigation > ul > li:hover::after {
     padding: 15px 0 25px;
 }
 
-.about-us > .row > .about-column > .hero-button {
-    color: #f44336;
-    border: 1px solid #f44336;
-    background: transparent;
-}
-
-.about-us > .row > .about-column > .hero-button:hover {
-    color: white;
-    background: #f44336;
-}
-
 .about-us > .row > .about-column > img {
     width: 100%;
+}
+
+/* Blog Page */
+.blog {
+    width: 80%;
+    padding: 60px 0;
+    margin: auto;
+}
+
+.blog > .row > .blog-post {
+    flex-basis: 65%;
+}
+
+.blog > .row > .blog-post > img {
+    width: 100%;
+}
+
+.blog > .row > .blog-post > h2 {
+    margin: 30px 0;
+    font-weight: 600;
+}
+
+.blog > .row > .blog-post > p {
+    padding: 0;
+    text-align: justify;
+}
+
+.blog > .row > .blog-post > .comment {
+    padding: 10px 20px;
+    margin: 50px 0;
+    border: 1px solid #cccccc;
+}
+
+.blog > .row > .blog-post > .comment > .comment-form > input, .comment-form > textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: #f0f0f0;
+}
+
+.blog > .row > .blog-post > .comment > .comment-form > button {
+    margin: 10px 0;
+}
+
+.blog > .row > .blog-post-categories {
+    flex-basis: 32%;
+}
+
+.blog > .row > .blog-post-categories > h3 {
+    padding: 7px 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    background-color: var(--red);
+}
+
+.blog > .row > .blog-post-categories > div {
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    color: #555555;
+}
+
+/* Contact Page */
+.map {
+    width: 80%;
+    padding: 80px 0;
+    margin: auto;
+}
+
+.map > iframe {
+    width: 100%;
+}
+
+/* ***** */
+
+.contact {
+    width: 80%;
+    margin: auto;
+}
+
+.contact > .row > .contact-column {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact > .row > .contact-column > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact > .row > .contact-column > div .fa {
+    height: 28px;
+    width: 28px;
+    fill: var(--red);
+    margin: 10px 30px 10px 10px;
+}
+
+.contact > .row > .contact-column > div h5 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #555555;
+}
+
+.contact > .row > .contact-column > div p {
+    padding: 0;
+}
+
+.contact > .row > .contact-column input, .contact-column textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;    
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
 }
 
 /* Small Screen Size */
@@ -362,14 +500,14 @@ nav > .navigation > ul > li:hover::after {
     }
 
     nav > .navigation {
-        position: absolute;
+        position: fixed;
         height: 100vh;
         width: 200px;
         top: 0;
         right: -200px;
         text-align: left;
         z-index: 2;
-        background: #f44336;
+        background: var(--red);
         transition: 1s;
     }
 
@@ -387,6 +525,7 @@ nav > .navigation > ul > li:hover::after {
         width: 22px;
         margin: 10px;
         fill: white;
+        cursor: pointer;
     }
 
     /* ***** */
@@ -403,12 +542,18 @@ nav > .navigation > ul > li:hover::after {
     }
 
     /* ***** */
-
+    
     .cta > h1 {
         font-size: 24px;
     }
-
+    
     /* About Page */
+    .sub-header > h1 {
+        font-size: 24px;
+    }
+    
+    /* ***** */
+
     .about-us > .row > .about-column {
         text-align: center;
     }
