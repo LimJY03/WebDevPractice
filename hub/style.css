@@ -1,0 +1,195 @@
+:root {
+    --bgcolor-university: #f44336;
+    --contentcolor-university: #000000;
+    --contentcolor-secondary-university: #2c2c2c;
+}
+
+/* Global Elements */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 12px 30px;
+    position: relative;
+    color: black;
+    font-size: 14px;
+    border: 1px solid black;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.hero-button:hover {
+    color: white;
+    background: black;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Header Section */
+
+.header {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), white), url(https://images.unsplash.com/photo-1511649475669-e288648b2339?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80);
+}
+
+.header > .textbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header > .textbox > h1 {
+    margin-bottom: 12px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.header > .textbox > p {
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+/* University Website Design */
+
+.university-web-design > .content {
+    width: 80%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: auto;
+}
+
+.university-web-design > .content > .row > .column-left {
+    flex-basis: 48%;
+}
+
+.university-web-design > .content > .row > .column-left > a > img {
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.university-web-design > .content > .row > .column-left > a > img:hover {
+    transform: scale(1.05);
+}
+
+.university-web-design > .content > .row > .column-right {
+    flex-basis: 48%;
+}
+
+.university-web-design > .content > .row > .column-right > h2 {
+    margin-bottom: 14px;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--contentcolor-university);
+}
+
+.university-web-design > .content > .row > .column-right > p {
+    margin-bottom: 42px;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--contentcolor-secondary-university);
+}
+
+.university-web-design > .content > .row > .column-right > .section-button {
+    margin-bottom: 14px;
+}
+
+.university-web-design > .content > .row > .column-right a {
+    display: inline-flex;
+    font-size: 18px;
+    color: var(--contentcolor-university);
+}
+
+.university-web-design > .content > .row > .column-right a .button-text::after {
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin-top: 3px;
+    content: '';
+    background-color: var(--contentcolor-university);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: 0.8s;
+}
+
+.university-web-design > .content > .row > .column-right a i {
+    margin-left: 10px;
+    vertical-align: middle;
+    font-size: 24px;
+    color: var(--contentcolor-university);
+    transition: 0.5s;
+}
+
+.university-web-design > .content > .row > .column-right a:hover i {
+    transform: translateX(8px);
+}
+
+.university-web-design > .content > .row > .column-right a:hover .button-text::after {
+    transform: scaleX(1);
+}
+
+/* Footer */
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #dddddd;
+}
+.footer > a {
+    color: var(--contentcolor-university);
+}
+
+.footer > a > i {
+    padding-bottom: 3px;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1180px) {
+
+    .row {
+        flex-direction: column;
+    }
+
+    .university-web-design > .content > .row > .column-left > a > img {
+        margin-bottom: 42px;
+    }
+
+    .university-web-design > .content > .row > .column-right {
+        text-align: center;
+    }
+
+    .university-web-design > .content > .row > .column-right a .button-text::after {
+        transform-origin: center;
+    }
+
+    .university-web-design > .content > .row > .column-right i {
+        display: none;
+    }
+}
