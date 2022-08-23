@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-pop: #088178;
+    --color-primary-text: #222222;
+    --color-secondary-text: #808F88;
+    --color-gold-star: #F3B519;
+    --color-grey-background: #E3E6F3;
+    --color-aqua-shade: #D1E8F2;
+    --color-pink-shade: #F6DBF2;
+    --color-green-shade: #CDEBBC;
+    --color-blue-shade: #DDF1FD;
+    --color-purple-shade: #DFDEFD;
+    --color-orange-shade: #FAE8D3;
+    --color-dropshadow-strong: rgba(0, 0, 0, 0.1);
+    --color-dropshadow-medium: rgba(0, 0, 0, 0.06);
+    --color-dropshadow-light: rgba(0, 0, 0, 0.03);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+html .material-icons-outlined, html .material-icons {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+body {
+    width: 100%;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: var(--color-primary-text);
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 56px;
+    color: var(--color-primary-text);
+}
+
+h4 {
+    font-size: 20px;
+    color: var(--color-primary-text);
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+p {
+    margin: 15px 0 20px;
+    font-size: 16px;
+    color: var(--color-secondary-text);
+}
+
+.padding-config-1 {
+    padding: 40px 10%;
+}
+
+.marginconfig-1 {
+    margin: 40px 0;
+}
+
+/* Index */
+#header {
+    display: flex;
+    z-index: 99;
+    padding: 20px 10%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-grey-background);
+    box-shadow: 0 5px 15px var(--color-dropshadow-medium);
+}
+
+#header > nav > #navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header > nav > #navigation-bar > li {
+    padding: 0 20px;
+    position: relative;
+    list-style: none;
+}
+
+#header > nav > #navigation-bar > li > a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-primary-text);
+    transition: 0.3s ease;
+}
+
+#header > nav > #navigation-bar > li > a::after {
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 20px; /* Each text has paadding of 20px; */
+    content: '';
+    background-color: transparent;
+    transition: 0.3s ease;
+}
+
+#header > nav > #navigation-bar > li > a:hover, #header > nav > #navigation-bar > li > a.active {
+    color: var(--color-pop);
+}
+
+#header > nav > #navigation-bar > li > a:hover::after, #header > nav > #navigation-bar > li > a.active::after {
+    background-color: var(--color-pop);
+}
+
+/* ***** */
+
+#hero {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 0 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(../images/hero4.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#hero > h4 {
+    padding-bottom: 15px;
+}
+
+#hero > h1 {
+    color: var(--color-pop);
+}
+
+#hero > a.shop-button {
+    padding: 14px 80px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-pop);
+    background-image: url(../images/button.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/* ***** */
+
+#feature {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#feature > div.feature-box {
+    width: 180px;
+    padding: 25px 15px;
+    margin: 15px 0;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid var(--color-green-shade);
+    box-shadow: 20px 20px 34px var(--color-dropshadow-light);
+}
+
+#feature > div.feature-box:hover {
+    box-shadow: 10px 10px 54px var(--color-dropshadow-strong);
+}
+
+#feature > div.feature-box > img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature > div.feature-box > h6 {
+    display: inline-block;
+    padding: 9px 8px 6px;
+    line-height: 1;
+    border-radius: 2px;
+    color: var(--color-pop);
+    background-color: var(--color-aqua-shade);
+}
+
+#feature > div.feature-box:nth-child(2) > h6 {
+    background-color: var(--color-pink-shade);
+}
+
+#feature > div.feature-box:nth-child(3) > h6 {
+    background-color: var(--color-green-shade);
+}
+
+#feature > div.feature-box:nth-child(4) > h6 {
+    background-color: var(--color-blue-shade);
+}
+
+#feature > div.feature-box:nth-child(5) > h6 {
+    background-color: var(--color-purple-shade);
+}
+
+#feature > div.feature-box:nth-child(6) > h6 {
+    background-color: var(--color-orange-shade);
+}
+
+/* ***** */
+
+#product {
+    text-align: center;
+}
+
+#product > div.product-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#product > div.product-box > div.product {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    margin: 15px 0;
+    position: relative;
+    border-radius: 25px;
+    border: 1px solid var(--color-green-shade);
+    box-shadow: 20px 20px 30px var(--color-dropshadow-light);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#product > div.product-box > div.product:hover {
+    box-shadow: 20px 20px 30px var(--color-dropshadow-medium);
+}
+
+#product > div.product-box > div.product > img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product > div.product-box > div.product > div.description {
+    padding: 10px 0;
+    text-align: start;
+}
+
+#product > div.product-box > div.product > div.description > span {
+    font-size: 12px;
+    color: grey;
+}
+
+#product > div.product-box > div.product > div.description > h5 {
+    padding-top: 7px;
+    font-size: 14px;
+    color: var(--color-primary-text);
+}
+
+#product > div.product-box > div.product > div.description > div.reviews {
+    height: 100%;
+    padding-top: 7px;
+}
+
+#product > div.product-box > div.product > div.description > div.reviews > span.material-icons {
+    font-size: 18px;
+    color: var(--color-gold-star);
+}
+
+#product > div.product-box > div.product > div.description > h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-pop);
+}
+
+#product > div.product-box > div.product > a > span.cart {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    font-weight: 500;
+    line-height: 40px;
+    border-radius: 20px;
+    color: var(--color-pop);
+    background-color: var(--color-green-shade);
+}
