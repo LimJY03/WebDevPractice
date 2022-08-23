@@ -268,12 +268,13 @@ p {
 }
 
 #product > div.product-box > div.product > div.description > div.reviews {
+    display: flex;
     height: 100%;
     padding-top: 7px;
-    font-size: 0;
 }
 
 #product > div.product-box > div.product > div.description > div.reviews > span.material-icons {
+    display: block;
     font-size: 18px;
     color: var(--color-gold-star);
 }
