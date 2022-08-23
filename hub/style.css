@@ -1,7 +1,6 @@
 :root {
-    --bgcolor-university: #f44336;
-    --contentcolor-university: #000000;
-    --contentcolor-secondary-university: #2c2c2c;
+    --contentcolor-primary: #000000;
+    --contentcolor-secondary: #2c2c2c;
 }
 
 /* Global Elements */
@@ -76,80 +75,80 @@ a {
 
 /* University Website Design */
 
-.university-web-design > .content {
+section > .content {
     width: 80%;
     padding-top: 100px;
     padding-bottom: 100px;
     margin: auto;
 }
 
-.university-web-design > .content > .row > .column-left {
+section > .content > .row > .column-left {
     flex-basis: 48%;
 }
 
-.university-web-design > .content > .row > .column-left > a > img {
+section > .content > .row > .column-left > a > img {
     border-radius: 10px;
     cursor: pointer;
     transition: 0.5s;
 }
 
-.university-web-design > .content > .row > .column-left > a > img:hover {
+section > .content > .row > .column-left > a > img:hover {
     transform: scale(1.05);
 }
 
-.university-web-design > .content > .row > .column-right {
+section > .content > .row > .column-right {
     flex-basis: 48%;
 }
 
-.university-web-design > .content > .row > .column-right > h2 {
+section > .content > .row > .column-right > h2 {
     margin-bottom: 14px;
     font-size: 28px;
     font-weight: 600;
-    color: var(--contentcolor-university);
+    color: var(--contentcolor-primary);
 }
 
-.university-web-design > .content > .row > .column-right > p {
+section > .content > .row > .column-right > p {
     margin-bottom: 42px;
     font-size: 16px;
     font-weight: 300;
-    color: var(--contentcolor-secondary-university);
+    color: var(--contentcolor-secondary);
 }
 
-.university-web-design > .content > .row > .column-right > .section-button {
+section > .content > .row > .column-right > .section-button {
     margin-bottom: 14px;
 }
 
-.university-web-design > .content > .row > .column-right a {
+section > .content > .row > .column-right a {
     display: inline-flex;
     font-size: 18px;
-    color: var(--contentcolor-university);
+    color: var(--contentcolor-primary);
 }
 
-.university-web-design > .content > .row > .column-right a .button-text::after {
+section > .content > .row > .column-right a .button-text::after {
     display: block;
     height: 2px;
     width: 100%;
     margin-top: 3px;
     content: '';
-    background-color: var(--contentcolor-university);
+    background-color: var(--contentcolor-primary);
     transform: scaleX(0);
     transform-origin: bottom left;
     transition: 0.8s;
 }
 
-.university-web-design > .content > .row > .column-right a i {
+section > .content > .row > .column-right a i {
     margin-left: 10px;
     vertical-align: middle;
     font-size: 24px;
-    color: var(--contentcolor-university);
+    color: var(--contentcolor-primary);
     transition: 0.5s;
 }
 
-.university-web-design > .content > .row > .column-right a:hover i {
+section > .content > .row > .column-right a:hover i {
     transform: translateX(8px);
 }
 
-.university-web-design > .content > .row > .column-right a:hover .button-text::after {
+section > .content > .row > .column-right a:hover .button-text::after {
     transform: scaleX(1);
 }
 
@@ -162,7 +161,7 @@ a {
     background-color: #dddddd;
 }
 .footer > a {
-    color: var(--contentcolor-university);
+    color: var(--contentcolor-primary);
 }
 
 .footer > a > i {
@@ -177,19 +176,19 @@ a {
         flex-direction: column;
     }
 
-    .university-web-design > .content > .row > .column-left > a > img {
+    section > .content > .row > .column-left > a > img {
         margin-bottom: 42px;
     }
 
-    .university-web-design > .content > .row > .column-right {
+    section > .content > .row > .column-right {
         text-align: center;
     }
 
-    .university-web-design > .content > .row > .column-right a .button-text::after {
+    section > .content > .row > .column-right a .button-text::after {
         transform-origin: center;
     }
 
-    .university-web-design > .content > .row > .column-right i {
+    section > .content > .row > .column-right i {
         display: none;
     }
 }
