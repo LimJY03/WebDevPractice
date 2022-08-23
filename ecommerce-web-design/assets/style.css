@@ -270,6 +270,7 @@ p {
 #product > div.product-box > div.product > div.description > div.reviews {
     height: 100%;
     padding-top: 7px;
+    font-size: 0;
 }
 
 #product > div.product-box > div.product > div.description > div.reviews > span.material-icons {
@@ -278,7 +279,7 @@ p {
 }
 
 #product > div.product-box > div.product > div.description > h4 {
-    padding-top: 7px;
+    padding-top: 12px;
     font-size: 15px;
     font-weight: 700;
     color: var(--color-pop);
