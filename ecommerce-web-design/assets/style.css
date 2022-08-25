@@ -601,6 +601,115 @@ footer > div.copyright > a > p > span {
     font-size: 16px;
 }
 
+/* Shop */
+
+#subheader {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-image: url(../images/banner/b1.jpg);
+}
+
+#subheader > h2, #subheader > p {
+    color: var(--color-primary-text-darkbg);
+}
+
+/* ***** */
+
+#pagination {
+    text-align: center;
+}
+
+#pagination > a {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--color-primary-text-darkbg);
+    border-radius: 4px;
+    background-color: var(--color-pop);
+}
+
+#pagination > a > span {
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Product */
+
+#product-details {
+    display: flex;
+    margin-top: 20px;
+}
+
+#product-details > div.product-image {
+    width: 40%;
+    margin-right: 50px;
+}
+
+#product-details > div.product-image > img {
+    margin-bottom: 0.7%;
+}
+
+#product-details > div.product-image > div.image-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+#product-details > div.product-image > div.image-group > div.image-column {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#product-details > div.product-description {
+    width: 50%;
+    padding-top: 30px
+}
+
+#product-details > div.product-description > h6 {
+    color: var(--color-secondary-text);
+}
+
+#product-details > div.product-description > h4 {
+    padding: 40px 0 20px;
+}
+
+#product-details > div.product-description > h2 {
+    font-size: 32px;
+}
+
+#product-details > div.product-description > select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#product-details > div.product-description > input {
+    width: 50px;
+    height: 44px;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#product-details > div.product-description > input:focus {
+    outline: none;
+}
+
+#product-details > div.product-description > button.button-primary {
+    color: var(--color-primary-text-darkbg);
+    background-color: var(--color-pop);
+}
+
+#product-details > div.product-description > span {
+    line-height: 25px;
+    color: var(--color-secondary-text);
+}
+
 /* Tablet View */
 
 @media (max-width: 1024px) {
@@ -810,5 +919,21 @@ footer > div.copyright > a > p > span {
     #newsletter > div.form {
         width: 100%;
         margin-top: 20px;
+    }
+
+    /* Product */
+
+    #product-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #product-details > div.product-image {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #product-details > div.product-description {
+        width: 100%;
     }
 }
