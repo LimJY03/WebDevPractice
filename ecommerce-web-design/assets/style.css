@@ -15,6 +15,7 @@
     --color-blue-shade: #DDF1FD;
     --color-purple-shade: #DFDEFD;
     --color-orange-shade: #FAE8D3;
+    --color-lightgrey-shade: #E1E1E1;
     --color-dropshadow-strong: rgba(0, 0, 0, 0.1);
     --color-dropshadow-medium: rgba(0, 0, 0, 0.06);
     --color-dropshadow-light: rgba(0, 0, 0, 0.03);
@@ -753,7 +754,7 @@ footer > div.copyright > a > p > span {
     left: 0;
     font-size: 70px;
     font-weight: 700;
-    color: var(--color-grey-background);
+    color: var(--color-lightgrey-shade);
 }
 
 #blog > div.blog-row > div.blog-column-right {
@@ -829,6 +830,121 @@ footer > div.copyright > a > p > span {
 
 /* Contact */
 
+#contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact > div.details {
+    width: 40%;
+}
+
+#contact > div.details > span, #form > form > span {
+    font-size: 12px;
+}
+
+#contact > div.details > h2, #form > form > h2 {
+    padding: 20px 0;
+    font-size: 26px;
+    line-height: 35px;
+}
+
+#contact > div.details > h3 {
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+
+#contact > div.details > div > li {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    list-style: none;
+}
+
+#contact > div.details > div > li > span {
+    padding-right: 22px;
+    margin-bottom: 2px;
+    font-size: 14px;
+    color: var(--color-secondary-text);
+}
+
+#contact > div.details > div > li > p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#contact > div.map {
+    width: 55%;
+    height: 400px;
+}
+
+#contact > div.map > iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* ***** */
+
+#form {
+    display: flex;
+    padding: 80px;
+    margin: 30px 10%;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--color-lightgrey-shade);
+}
+
+#form > form {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    align-items: flex-start;
+}
+
+#form > form > input, #form > form > textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-lightgrey-shade);
+    outline: none;
+}
+
+#form > form > button {
+    color: var(--color-primary-text-darkbg);
+    background-color: var(--color-pop);
+}
+
+#form > div.contact-list > div.person {
+    display: flex;
+    padding-bottom: 25px;
+    align-items: flex-start;
+}
+
+#form > div.contact-list > div.person:nth-child(3) {
+    padding-bottom: 0;
+}
+
+#form > div.contact-list > div.person > img {
+    width: 65px;
+    height: 65px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+#form > div.contact-list > div.person > p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+#form > div.contact-list > div.person > p > span {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-primary-text);
+}
+
 /* Cart */
 
 /* Tablet View */
@@ -854,8 +970,8 @@ footer > div.copyright > a > p > span {
         position: fixed;
         top: 0;
         right: -300px;
-        align-items: flex-start;
         justify-content: flex-start;
+        align-items: flex-start;
         box-shadow: 0 40px 60px var(--color-dropshadow-strong);
         background-color: var(--color-grey-background);
         transition: 0.3s ease;
@@ -952,6 +1068,16 @@ footer > div.copyright > a > p > span {
     #newsletter > div.form {
         width: 70%;
         margin-top: 20px;
+    }
+
+    /* Contact */
+
+    #form {
+        padding: 40px;
+    }
+
+    #form > form {
+        width: 50%;
     }
 }
 
@@ -1103,5 +1229,33 @@ footer > div.copyright > a > p > span {
     #about > div {
         padding-left: 0;
         text-align: center;
+    }
+
+    /* Contact */
+
+    #contact {
+        flex-direction: column;
+    }
+
+    #contact > div.details {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #contact > div.map {
+        width: 100%;
+    }
+
+    /* ***** */
+
+    #form {
+        flex-wrap: wrap;
+        padding: 30px 20px;
+        margin: 20px;
+    }
+
+    #form > form {
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
