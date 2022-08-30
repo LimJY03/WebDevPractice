@@ -26,7 +26,7 @@ In `CSS`:
 
 ### Icons
 
-Google Fonts has a icon library called the [Material Icons](https://fonts.google.com/icons?icon.set=Material+Icons) which also can be embedded in our `HTML` code easily without downloading it. We can then use the icons using the `<span>` tag or `<i>` tag, and the name of the icon as the "`innerHTML`" of the tag. For example to create a "face" icon, we just need to write the following code in `HTML`:
+Google Fonts has a icon library called the [Material Icons](https://fonts.google.com/icons?icon.set=Material+Icons) which also can be embedded in our `HTML` code easily without downloading it. We can then use the icons using the `<span>` tag or `<i>` tag, and the name of the icon as the "`innerText`" of the tag. For example to create a "face" icon, we just need to write the following code in `HTML`:
 
 ```html
 <span class="material-icons">face</span>
