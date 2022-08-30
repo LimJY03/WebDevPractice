@@ -4,7 +4,7 @@ This repository stores the source codes of some website designs each reference f
 
 ## Website Details
 
-There are ~~multiple~~ (only 1 for now) websites that have done developing, where each's source code can be found in the following folders:
+There are multiple websites that have done developing, where each's source code can be found in the following folders:
 
 ### 01. [University Web Design](https://github.com/LimJY03/WebDevPractice/tree/main/university-web-design)
 
@@ -12,6 +12,8 @@ There are ~~multiple~~ (only 1 for now) websites that have done developing, wher
 
 This website design is with reference to [**Easy Tutorial**](https://www.youtube.com/c/EasyTutorialsVideo) on YouTube. Link to the video [**here**](https://www.youtube.com/watch?v=oYRda7UtuhA).
 
-<!-- ### 02. [Ecommerce Web Design]() -->
+### 02. [Ecommerce Web Design](https://github.com/LimJY03/WebDevPractice/tree/main/ecommerce-web-design)
 
-### 02. Ecommerce Web Design
+![ecommerce-web-design-thumbnail](https://media.discordapp.net/attachments/1010370083689865328/1011560555145855028/unknown.png?width=1316&height=701)
+
+This website design is with reference to [**Tech2 etc**](https://www.youtube.com/c/Tech2etc) on YouTube. Link to the video [**here**](https://www.youtube.com/watch?v=P8YuWEkTeuE&t=47s).
