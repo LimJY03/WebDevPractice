@@ -28,6 +28,10 @@
     font-family: 'League Spartan', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html .material-icons-outlined, html .material-icons {
     padding: 0;
     margin: 0;
