@@ -17,3 +17,5 @@ This website design is with reference to [**Easy Tutorial**](https://www.youtube
 ![ecommerce-web-design-thumbnail](https://media.discordapp.net/attachments/1010370083689865328/1011560555145855028/unknown.png?width=1316&height=701)
 
 This website design is with reference to [**Tech2 etc**](https://www.youtube.com/c/Tech2etc) on YouTube. Link to the video [**here**](https://www.youtube.com/watch?v=P8YuWEkTeuE&t=47s).
+
+### 03. Restaurant Web Design
