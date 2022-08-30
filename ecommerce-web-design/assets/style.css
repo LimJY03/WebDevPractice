@@ -790,7 +790,7 @@ footer > div.copyright > a > p > span {
 
 /* About */
 
-#subheader.about-subheader {
+#subheader.about-subheader, #subheader.contact-subheader, #subheader.cart-subheader {
     background-image: url(../images/about/banner.png);
 }
 
@@ -946,6 +946,116 @@ footer > div.copyright > a > p > span {
 }
 
 /* Cart */
+
+#cart {
+    overflow-x: auto;
+}
+
+#cart > table {
+    width: 100%;
+    table-layout: fixed;
+    white-space: nowrap;
+    border-collapse: collapse;
+}
+
+#cart > table > thead {
+    border: 1px solid var(--color-lightgrey-shade);
+    border-left: none;
+    border-right: none;
+}
+
+#cart > table > thead > tr > td {
+    padding: 18px 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#cart > table > tbody > tr > td {
+    padding-top: 15px;
+    font-size: 13px;
+}
+
+#cart > table > tbody > tr > td > span {
+    cursor: pointer;
+}
+
+#cart > table > tbody > tr > td > img {
+    width: 70px;
+}
+
+#cart > table > tbody > tr > td:nth-child(5) > input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart > table td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+
+#cart > table td:nth-child(2), #cart td:nth-child(4), #cart td:nth-child(5), #cart td:nth-child(6) {
+    width: 150px;
+    text-align: center;
+}
+
+#cart > table td:nth-child(3) {
+    width: 250px;
+    text-align: center;
+}
+
+/* ***** */
+
+#payment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#payment > div.coupon {
+    width: 50%;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+#payment > div.coupon > h3, #payment > div.subtotal > h3 {
+    padding-bottom: 15px;
+}
+
+#payment > div.coupon > div > input {
+    width: 60%;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 14px;
+    border: 1px solid var(--color-lightgrey-shade);
+    outline: none;
+}
+
+#payment > div.coupon > div > button, #payment > div.subtotal > button {
+    padding: 12px 20px;
+    color: var(--color-primary-text-darkbg);
+    background-color: var(--color-pop);
+}
+
+#payment > div.subtotal {
+    width: 50%;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid var(--color-lightgrey-shade);
+}
+
+#payment > div.subtotal > table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+#payment > div.subtotal > table td {
+    width: 50%;
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid var(--color-lightgrey-shade);
+}
 
 /* Tablet View */
 
@@ -1257,5 +1367,21 @@ footer > div.copyright > a > p > span {
     #form > form {
         width: 100%;
         margin-bottom: 30px;
+    }
+
+    /* Cart */
+
+    #payment {
+        flex-direction: column;
+    }
+
+    #payment > div.coupon {
+        width: 100%;
+        padding: 0;
+    }
+
+    #payment > div.subtotal {
+        width: 100%;
+        padding: 20px;
     }
 }
